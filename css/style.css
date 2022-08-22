@@ -2,20 +2,9 @@
 *{
     font-family: kanit, sans-serif;
 }
-
-/* body {
-    max-width: 1000px;
-} */
-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-evenly;
-    transform: translate();
-}
-nav ul li a {
+.navitem {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 20px;
     color: black;
 }
@@ -24,47 +13,31 @@ nav ul li a {
     font-weight: 600;
 }
 .logo {
-    margin-left: 180px;
+    width: 100px;
+}
+.btn-nav {
+    color: #c0c0c0;
+    background-color: #0E34A0;
 }
 .subtitulo {
     background-color: #0E34A0;
     color: #c0c0c0;
     text-align: center;
-}
-.imagen-local {
-    width: 100% ; 
+
 }
 h1, h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
 }
-.seccion-productos {
-    display: flex;
-    justify-content: space-between;
-
-}
-article {
-    width: 20%;
-} 
-.productos {
-    width: 100%;
-    border-radius: 5px;
-    transition: all 2s;
-}
-.productos:hover {
-    scale: 1.1;
+.card {
+    margin: 20px 30px;
 }
 .boton-productos {
     color: #c0c0c0;
     font-weight: 600;
-    background-color: #0E34A0 ;
-    font-size: 1.5rem;
+    background-color: #0E34A0;
+    font-size: 1rem;
     border-radius: 5px;
-    margin-top: 25px;
-}
-article p {
-    font-weight: 600;
-    font-size: 1.2rem;
 }
 .div-centrada {
     display: flex;
@@ -75,16 +48,20 @@ article p {
     color: #c0c0c0;
     text-align: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 .icono-footer {
     width: 100px;
 }
 .redes {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 30px;
+}
+footer {
+    background-color: #0E34A0;
 }
 footer div ul {
     list-style: none;
@@ -93,7 +70,95 @@ footer div ul a {
     text-decoration: none;
     color: #c0c0c0;
 }
+.item-footer {
+    margin-top: 20px;
+}
+.texto-gris {
+    color: #c0c0c0;
+}
+@media (min-width: 480px) {
+    h1, h2 {
+        font-size: 1.3rem;
+    }
+    .boton-productos {
+        font-size: 1.3rem;
+    }
+    .footer-flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
+@media (min-width: 768px) {
+    h1,h2 {
+        font-size: 1.5rem;
+    }
+    #producto-1 {
+        grid-area: producto-1;
+    }
+    #producto-2 {
+        grid-area: producto-2;
+    }
+    #producto-3 {
+        grid-area: producto-3;
+    }
+    #producto-4 {
+        grid-area: producto-4;
+    }
+    .grid-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "producto-1 producto-2" "producto-3 producto-4";
+    }
+}
+@media (min-width: 1025px) {
+    #newsletter {
+        grid-area: newsletter;
+    }
+    #mas-info {
+        grid-area: mas-info;
+    }
+    #contacto {
+        grid-area: contacto;
+    }
+    
+    .final {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3);
+        grid-template-areas: "newsletter mas-info contacto";
+        background-color: #0E34A0;
+        color: #c0c0c0;
+        font-size: 1.25rem;
+    }
+    footer section div ul li a {
+        text-decoration: none;
+        color: #c0c0c0;
+    }
+    .redes {
+        margin: 25px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+@media (min-width: 1200px) {
+    .navitem {
+        font-size: 1.4rem;
+    }
+    .boton-productos{
+        font-size: 1.4rem;
+    }
+    h1,h2 {
+        font-size: 1.8rem;
+}
+.grid-productos {
+    display: flex;
+    justify-content: space-around;
+}
+}
 
+/*
 #newsletter {
     grid-area: newsletter;
 }
@@ -107,7 +172,6 @@ footer div ul a {
     grid-area: redes;
 }
 
-
 .final {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -118,9 +182,7 @@ footer div ul a {
     text-align: center;
     font-size: 1.25rem;
 }
-
-#
-
+*/
 footer section div ul li a {
     text-decoration: none;
     color: #c0c0c0;

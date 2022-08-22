@@ -6,52 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucursales</title>
     <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/index.html">
-            <img class="logo" src="../img/logo.png" alt="Rey de copas">
-        </a>
-        <div>
-        <ul>
-            <li>
-                <a class="azul-egipcio" href="/index.html">Inicio</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png" alt="Rey de copas"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="navitem active azul-egipcio" aria-current="page" href="../index.html" > Inicio </a>
             </li>
-            <li>
-                <a href="tienda_online.html">Tienda Online</a>
+            <li class="nav-item">
+                <a class="navitem text-center" href="../html/tienda_online.html">Tienda Online</a>
             </li>
-            <li>
-                <a href="promociones.html">Promociones</a>
+            <li class="nav-item">
+                <a class="navitem" href="../html/promociones.html">Promociones</a>
             </li>
-            <li>
-                <a href="sucursales.html">Sucursales</a>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle navitem" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sucursales
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item azul-egipcio" href="../html/sucursales.html">Alta Córdoba</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item azul-egipcio" href="#">Cofico</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item azul-egipcio" href="#">Nueva Córdoba</a></li>
+                </ul>
             </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
+            <li class="nav-item">
+                <a class="navitem" href="../html/contacto.html">Contacto</a>
             </li>
-        </ul>
-        </div>
+            </ul>
+            <form class="d-flex buscador">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn-nav btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>    
     </nav>
     <footer>
-        <p class="subtitulo-footer">Envíos a domicilio via whatsapp o instagram.</p>
+        <p class="p-2 subtitulo-footer">Envíos a domicilio via whatsapp o instagram.</p>
         <section class="final">
-        <div>
-            <p>NEWSLETTER</p>
-            <p>No te pierdas nuestras promos y novedades!</p>
-            <form>
-                <div>
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Email">
-                    <button>Enviar</button>
+        <div id="newsletter">
+            <p class="px-4 texto-gris fw-bold"> NEWSLETTER</p>
+            <p class="px-4 texto-gris">No te pierdas nuestras promos y novedades!</p>
+            <form class="px-4 texto-gris">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fw-bold">Nombre</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos tus datos con nadie.</div>
                 </div>
-            </form>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label fw-bold">Email</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="boton-productos btn btn-primary">Enviar</button>
+                </form>
         </div>
-        <div>
+        <div class="footer-flex">
+        <div class="item-footer" id="Mas-info">
             <ul>
-                <p>MÁS INFORMACION</p>
+                <p class="texto-gris fw-bold">MÁS INFORMACION</p>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="../index.html">Inicio</a>
                 </li>
                 <li>
                     <a href="tienda_online.html">Tienda Online</a>
@@ -67,9 +89,9 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div class="item-footer texto-gris" id="contacto">
             <ul>
-                <p>DATOS DE CONTACTO</p>
+                <p class="fw-bold">DATOS DE CONTACTO</p>
                 <li>
                     3517430555
                 </li>
@@ -84,7 +106,9 @@
                 </li>
             </ul>
         </div>
-        <section id="redes" class="redes">
+        </div>
+        </section>
+        <section class="redes">
             <div>
                 <a href="https://www.instagram.com/reydecopas.altacordoba/"><img class="icono-footer" src="../img/instagram.png" alt="Logo de instagram"></a>
             </div>
@@ -92,9 +116,7 @@
                 <a href="https://www.facebook.com/reydecopasvinoteca"><img class="icono-footer" src="../img/facebook.png" alt="icono facebook"></a>
             </div>
             </section>
-        </section>
-        </section>
-        </section>
+            <script src="../js/bootstrap.bundle.min.js"></script>
     </footer>
 </body>
 </html>
