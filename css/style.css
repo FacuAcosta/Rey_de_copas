@@ -32,12 +32,21 @@ h1, h2 {
 .card {
     margin: 20px 30px;
 }
+.productos-img {
+    border-radius: 10px;
+}
+.productos-img:hover{
+transform: scale(1.05);
+}
 .boton-productos {
     color: #c0c0c0;
     font-weight: 600;
     background-color: #0E34A0;
     font-size: 1rem;
     border-radius: 5px;
+}
+.boton-productos:hover{
+    transform: scale(1.2);
 }
 .div-centrada {
     display: flex;
