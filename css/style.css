@@ -160,39 +160,10 @@ footer div ul a {
     }
     h1,h2 {
         font-size: 1.8rem;
-}
+    }
 .grid-productos {
     display: flex;
     justify-content: space-around;
+    }
 }
-}
-
-/*
-#newsletter {
-    grid-area: newsletter;
-}
-#mas-info {
-    grid-area: mas-info;
-}
-#contacto {
-    grid-area: contacto;
-}
-#redes {
-    grid-area: redes;
-}
-
-.final {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "newsletter newsletter mas-info contacto redes redes" ;
-    background-color: #0E34A0;
-    color: #c0c0c0;
-    text-align: center;
-    text-align: center;
-    font-size: 1.25rem;
-}
-*/
-footer section div ul li a {
-    text-decoration: none;
-    color: #c0c0c0;
-}
+} 
