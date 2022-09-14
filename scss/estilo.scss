@@ -1,27 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import "fonts";
+@import "color";
+@import "misc";
+
+$menu: (
+    azul: $azul-egipcio,
+    violeta: violet,
+    negro: black,
+    verde: green,
+    rojo: red,
+);
+
+@each $item, $color in $menu{
+    .color-#{$item} {
+        color: $color;
+    }
+}
+
 *{
-    font-family: kanit, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
 }
 .navitem {
-    text-decoration: none;
+    text-decoration: $dN;
     font-size: 1rem;
     margin: 20px;
-    color: black;
+    /* color: $black; */
 }
 .azul-egipcio {
-    color: #0E34A0;
+    color: $azul-egipcio;
     font-weight: 600;
 }
 .logo {
     width: 100px;
 }
 .btn-nav {
-    color: #c0c0c0;
-    background-color: #0E34A0;
+    color: $plateado;
+    background-color: $azul-egipcio;
 }
 .subtitulo {
-    background-color: #0E34A0;
-    color: #c0c0c0;
+    background-color: $azul-egipcio;
+    color: $plateado;
     text-align: center;
 
 }
@@ -39,9 +60,9 @@ h1, h2 {
 transform: scale(1.05);
 }
 .boton-productos {
-    color: #c0c0c0;
+    color: $plateado;
     font-weight: 600;
-    background-color: #0E34A0;
+    background-color: $azul-egipcio;
     font-size: 1rem;
     border-radius: 5px;
 }
@@ -49,12 +70,12 @@ transform: scale(1.05);
     transform: scale(1.2);
 }
 .div-centrada {
-    display: flex;
+    display: $df;
     justify-content: center;
 }
 .subtitulo-footer {
-    background-color: #0E34A0;
-    color: #c0c0c0;
+    background-color: $azul-egipcio;
+    color: $plateado;
     text-align: center;
     text-align: center;
     font-size: 1.2rem;
@@ -64,18 +85,18 @@ transform: scale(1.05);
 }
 .redes {
     font-size: 1.2rem;
-    display: flex;
+    display: $df;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 30px;
 }
 footer {
-    background-color: #0E34A0;
+    background-color: $azul-egipcio;
         div ul {
-            list-style: none;
+            list-style: $dN;
             a {
-                text-decoration: none;
-                color: #c0c0c0;
+                text-decoration: $dN;
+                color: $plateado;
             }
         }
 }
@@ -87,7 +108,7 @@ footer {
         font-size: 1.3rem;
     }
     .footer-flex {
-        display: flex;
+        display: $df;
         justify-content: space-evenly;
     }
     
@@ -132,17 +153,17 @@ footer {
         display: grid;
         grid-template-columns: repeat(3);
         grid-template-areas: "newsletter mas-info contacto";
-        background-color: #0E34A0;
-        color: #c0c0c0;
+        background-color: $azul-egipcio;
+        color: $plateado;
         font-size: 1.25rem;
     }
     footer section div ul li a {
-        text-decoration: none;
-        color: #c0c0c0;
+        text-decoration: $dN;
+        color: $plateado;
     }
     .redes {
         margin: 25px;
-        display: flex;
+        display: $df;
         justify-content: space-evenly;
     }
 @media (min-width: 1200px) {
@@ -156,7 +177,7 @@ footer {
         font-size: 1.8rem;
     }
 .grid-productos {
-    display: flex;
+    display: $df;
     justify-content: space-around;
     }
 }
