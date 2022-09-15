@@ -1,0 +1,21 @@
+﻿Para el SEO de la página corregí todos los H1 y los Alt de las imágenes.
+En index.html agregue estas etiquetas:
+   <meta name="description" content="Rey de copas, Previoteca & Vinos. Venta de bebidas al MEJOR PRECIO en el corazón de Alta Córdoba.">
+    <meta name="keywords" content="Vinoteca, Previoteca, Vinos, Previa, Escabio, Amigos, Boliche, Alta Cordoba, Mejor precio">
+    <meta name="author" content="Facundo Angel Acosta Odiard">
+En contacto.html agregue estas etiquetas:
+   <meta name="description" content="Contactate con nosotros, cualquier duda que tengas comunicate">
+    <meta name="keywords" content="Contacto, WhatsApp, Instagram, Facebook, Contactate con nosotros, Dudas, Preguntas">
+    <meta name="author" content="Facundo Angel Acosta Odiard">
+En promociones.html agregue estas etiquetas:
+   <meta name="description" content="Las mejores promociones al MEJOR PRECIO en el corazón de Alta Córdoba.">
+    <meta name="keywords" content="Promociones, Fernet con Coca, Previa, Escabio, Alta Cordoba, Mejor precio">
+    <meta name="author" content="Facundo Angel Acosta Odiard">
+En sucursales.html agregue estas etiquetas:
+   <meta name="description" content="Nuestras sucursales">
+    <meta name="keywords" content="Sucursales, Cofico, Nueva Cordoba, Alta Cordoba, Vinoteca, Previoteca">
+    <meta name="author" content="Facundo Angel Acosta Odiard">
+Y en tienda_online.html agregue estas etiquetas:
+   <meta name="description" content="Tienda Online, los mejores precios de Alta Cordoba">
+    <meta name="keywords" content="Tienda Online, Hace tu pedido, Los mejores precios">
+    <meta name="author" content="Facundo Angel Acosta Odiard">
