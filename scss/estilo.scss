@@ -2,7 +2,7 @@
 @import "fonts";
 @import "color";
 @import "misc";
-
+/* Maps */
 $menu: (
     azul: $azul-egipcio,
     violeta: violet,
@@ -16,7 +16,17 @@ $menu: (
         color: $color;
     }
 }
-
+/* Mixin */
+@mixin size($alto, $ancho) {
+    width: $ancho;
+    height: $alto;
+}
+/* Map-Get */
+$estilos: (
+    centro: center,
+    tFuente: 1.4rem,
+    borRad: 10px,
+);
 *{
     padding: 0;
     margin: 0;
@@ -25,7 +35,7 @@ $menu: (
 }
 .navitem {
     text-decoration: $dN;
-    font-size: 1rem;
+    font-size: map-get($map: $estilos, $key: tFuente );
     margin: 20px;
     /* color: $black; */
 }
@@ -34,7 +44,8 @@ $menu: (
     font-weight: 600;
 }
 .logo {
-    width: 100px;
+    /* width: 100px; */
+    @include size(100%, 100px);
 }
 .btn-nav {
     color: $plateado;
@@ -43,18 +54,18 @@ $menu: (
 .subtitulo {
     background-color: $azul-egipcio;
     color: $plateado;
-    text-align: center;
+    text-align: map-get($map: $estilos, $key: centro );
 
 }
 h1, h2 {
-    text-align: center;
-    font-size: 1rem;
+    text-align: map-get($map: $estilos, $key: centro );
+    font-size: map-get($map: $estilos, $key: tFuente );
 }
 .card {
     margin: 20px 30px;
 }
 .productos-img {
-    border-radius: 10px;
+    border-radius: map-get($map: $estilos, $key: borRad );
 }
 .productos-img:hover{
 transform: scale(1.05);
@@ -63,31 +74,32 @@ transform: scale(1.05);
     color: $plateado;
     font-weight: 600;
     background-color: $azul-egipcio;
-    font-size: 1rem;
-    border-radius: 5px;
+    font-size: map-get($map: $estilos, $key: tFuente );
+    border-radius: map-get($map: $estilos, $key: borRad );
 }
 .boton-productos:hover{
     transform: scale(1.2);
 }
 .div-centrada {
     display: $df;
-    justify-content: center;
+    justify-content: map-get($map: $estilos, $key: centro );
 }
 .subtitulo-footer {
     background-color: $azul-egipcio;
     color: $plateado;
-    text-align: center;
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: map-get($map: $estilos, $key: centro );
+    text-align: map-get($map: $estilos, $key: centro );
+    font-size: map-get($map: $estilos, $key: tFuente );
 }
 .icono-footer {
-    width: 100px;
+    /* width: 100px; */
+    @include size(100%, 100px);
 }
 .redes {
-    font-size: 1.2rem;
+    font-size: map-get($map: $estilos, $key: tFuente );
     display: $df;
     justify-content: space-around;
-    align-items: center;
+    align-items: map-get($map: $estilos, $key: centro );
     padding-bottom: 30px;
 }
 footer {
@@ -102,10 +114,10 @@ footer {
 }
 @media (min-width: 480px) {
     h1, h2 {
-        font-size: 1.3rem;
+        font-size: map-get($map: $estilos, $key: tFuente );
     }
     .boton-productos {
-        font-size: 1.3rem;
+        font-size: map-get($map: $estilos, $key: tFuente );
     }
     .footer-flex {
         display: $df;
@@ -115,7 +127,7 @@ footer {
 }
 @media (min-width: 768px) {
     h1,h2 {
-        font-size: 1.5rem;
+        font-size: map-get($map: $estilos, $key: tFuente );
     }
     #producto-1 {
         grid-area: producto-1;
@@ -168,13 +180,13 @@ footer {
     }
 @media (min-width: 1200px) {
     .navitem {
-        font-size: 1.4rem;
+        font-size: map-get($map: $estilos, $key: tFuente );
     }
     .boton-productos{
-        font-size: 1.4rem;
+        font-size: map-get($map: $estilos, $key: tFuente );
     }
     h1,h2 {
-        font-size: 1.8rem;
+        font-size: map-get($map: $estilos, $key: tFuente );
     }
 .grid-productos {
     display: $df;
