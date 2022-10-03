@@ -10,48 +10,347 @@
     <title>Tienda Online</title>
     <link rel="shortcut icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="anuncio-header">
+        <p>Envío Gratis desde $5999 <a href="../html/envios.html">A TODO EL PAIS</a> + 3 cuotas sin interes. </p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png" alt="Imagen del logo de Rey de copas"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png" alt="Imagen del logo de Rey de copas"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="navitem active azul-egipcio" aria-current="page" href="../index.html" > Inicio </a>
-            </li>
-            <li class="nav-item">
-                <a class="navitem text-center" href="../html/tienda_online.html">Tienda Online</a>
-            </li>
-            <li class="nav-item">
-                <a class="navitem" href="../html/promociones.html">Promociones</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="dropdown-toggle navitem" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sucursales
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item azul-egipcio" href="../html/sucursales.html">Alta Córdoba</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item azul-egipcio" href="#">Cofico</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item azul-egipcio" href="#">Nueva Córdoba</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="navitem" href="../html/contacto.html">Contacto</a>
-            </li>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="navitem nav-link" href="../index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="navitem nav-link" href="../html/tienda_online.html">Tienda Online</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link navitem" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sucursales</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item azul-egipcio" href="../html/sucursales.html">Alta Córdoba</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item azul-egipcio color-gris">Cofico (Próximamente)</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item azul-egipcio color-gris">Nueva Córdoba (Próximamente)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="navitem nav-link" href="../html/envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navitem nav-link" href="../html/contacto.html">Contacto</a>
+                </li>
             </ul>
             <form class="d-flex buscador">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn-nav btn btn-outline-success" type="submit">Buscar</button>
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn-nav btn btn-outline-success" type="submit">Buscar</button>
             </form>
-        </div>    
+            </div>
+        </div>
     </nav>
+    <div class="subtitulo">
+        <H1>PRODUCTOS</H1>
+    </div> 
+    <div class="item-productos">
+        <ul class="lista-productos">
+            <li>Vinos
+                <ul>
+                    <li>Bodega Finca Iral</li>
+                    <div class="grid-productos">
+                        <div class="card p-3" id="iral-1">
+                            <img src="../img/FINCAIRALMALBECLASPINTADAS.jpg" class="productos-img card-img-top" alt="Imagen de vino FINCA IRAL MALBEC LAS PINTADAS 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">FINCA IRAL MALBEC LAS PINTADAS 750ml</h5>
+                                <p class="card-text azul-egipcio">$1190,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card p-3" id="iral-2">
+                            <img src="../img/FINCAIRALCABERNETFRANCZAMPAL.jpg" class="productos-img card-img-top" alt="Imagen de vino FINCA IRAL CABERNET FRANC ZAMPAL 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">FINCA IRAL CABERNET FRANC ZAMPAL 750ml</h5>
+                                <p class="card-text azul-egipcio">$1190,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card p-3" id="iral-3">
+                            <img src="../img/FINCAIRALBLENDUGARTECHE.jpg" class="productos-img card-img-top" alt="Imagen de vino FINCA IRAL BLEND UGARTECHE 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">FINCA IRAL BLEND UGARTECHE 750ml</h5>
+                                <p class="card-text azul-egipcio">$1010,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+
+                        <div class="card p-3" id="iral-4">
+                            <img src="../img/FINCAIRALCABERNETFRANCUGARTECHE.jpg" class="productos-img card-img-top" alt="Imagen de vino FINCA IRAL CABERNET FRANC UGARTECHE 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">FINCA IRAL CABERNET FRANC UGARTECHE 750ml</h5>
+                                <p class="card-text azul-egipcio">$1010,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Bodega Mosquita muerta</li>
+                    <div class="grid-productos">
+                        <div class="card p-3" id="mosq-1">
+                            <img src="../img/CORDEROCONPIELDELOBO.jpg" class="productos-img card-img-top" alt="Imagen de vino CORDERO CON PIEL DE LOBO MALBEC 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">CORDERO CON PIEL DE LOBO MALBEC 750ml</h5>
+                                <p class="card-text azul-egipcio">$790,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card p-3" id="mosq-2">
+                            <img src="../img/PISPI.jpg" class="productos-img card-img-top" alt="Imagen de vino PISPI 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">PISPI 750ml</h5>
+                                <p class="card-text azul-egipcio">$1840,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card p-3" id="mosq-3">
+                            <img src="../img/SAPODEOTROPOZO.jpg" class="productos-img card-img-top" alt="Imagen de vino SAPO DE OTRO POZO 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">SAPO DE OTRO POZO 750ml</h5>
+                                <p class="card-text azul-egipcio">$2400,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card p-3" id="mosq-4">
+                            <img src="../img/MOSQUITA-MUERTA.jpg" class="productos-img card-img-top" alt="Imagen de vino MOSQUITA MUERTA 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">MOSQUITA MUERTA 750ml</h5>
+                                <p class="card-text azul-egipcio">$3360,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Bodega Rutini </li>
+                    <div class="grid-productos">
+                        <div class="card p-3" id="rut-1">
+                            <img src="../img/RUTINIENCUENTROMALBEC.jpg" class="productos-img card-img-top" alt="Imagen de vino RUTINI ENCUENTRO MALBEC 700ml">
+                            <div class="card-body">
+                                <h5 class="card-title">RUTINI ENCUENTRO MALBEC 700ml</h5>
+                                <p class="card-text azul-egipcio">$2690,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card p-3" id="rut-2">
+                            <img src="../img/RUTINIMALBEC.jpg" class="productos-img card-img-top" alt="Imagen de vino RUTINI MALBEC 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">RUTINI MALBEC 750ml</h5>
+                                <p class="card-text azul-egipcio">$5750,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card p-3" id="rut-3">
+                            <img src="../img/RUTINIGUALTALLARYSINGLEVINEYARDMALBEC.jpg" class="productos-img card-img-top" alt="Imagen de vino RUTINI GUALTALLARY SINGLE VINEYARD MALBEC 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">RUTINI GUALTALLARY SINGLE VINEYARD MALBEC 750ml</h5>
+                                <p class="card-text azul-egipcio">$7650,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card p-3" id="rut-4">
+                            <img src="../img/RUTINIGUALTALLARYSINGLEVINEYARDCABERNETFRANC.jpg" class="productos-img card-img-top" alt="Imagen de vino RUTINI GUALTALLARY SINGLE VINEYARD CABERNET FRANC 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">RUTINI GUALTALLARY SINGLE VINEYARD CABERNET FRANC 750ml</h5>
+                                <p class="card-text azul-egipcio">$7650,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <li>Bodega Saint Felicien</li>
+                    <div class="grid-productos">
+                        <div class="card p-3" id="sant-1">
+                            <img src="../img/SAINTFELICIENCABERNETFRANC.jpg" class="productos-img card-img-top" alt="Imagen de vino SAINT FELICIEN CABERNET FRANC 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">SAINT FELICIEN CABERNET FRANC 750ml</h5>
+                                <p class="card-text azul-egipcio">$2140,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card p-3" id="sant-2">
+                            <img src="../img/SAINTFELICIENMALBEC.jpg" class="productos-img card-img-top" alt="SAINT FELICIEN MALBEC 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">SAINT FELICIEN MALBEC 750ml</h5>
+                                <p class="card-text azul-egipcio">$2140,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card p-3" id="sant-3">
+                            <img src="../img/SAINTFELICIENSYRAH.jpg" class="productos-img card-img-top" alt="Imagen de vino SAINT FELICIEN SYRAH 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">SAINT FELICIEN SYRAH 750ml</h5>
+                                <p class="card-text azul-egipcio">$2140,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card p-3" id="sant-4">
+                            <img src="../img/SAINTFELICIENMALBECORGANICO.jpg" class="productos-img card-img-top" alt="Imagen de vino SAINT FELICIEN MALBEC ORGANICO 750ml">
+                            <div class="card-body">
+                                <h5 class="card-title">SAINT FELICIEN MALBEC ORGANICO 750ml</h5>
+                                <p class="card-text azul-egipcio">$2730,00</p>
+                                <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <li>Fernet Branca</li>
+            <div class="grid-productos">
+                <div class="card p-3" id="fer-1">
+                    <img src="../img/FERNETBRANCA450ml.jpg" class="productos-img card-img-top" alt="Imagen de FERNET BRANCA 450ml">
+                    <div class="card-body">
+                        <h5 class="card-title">FERNET BRANCA 450ml</h5>
+                        <p class="card-text azul-egipcio">$1110,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="fer-2">
+                    <img src="../img/FERNETBRANCA750ml.jpg" class="productos-img card-img-top" alt="Imagen de FERNET BRANCA 750ml">
+                    <div class="card-body">
+                        <h5 class="card-title">FERNET BRANCA 750ml</h5>
+                        <p class="card-text azul-egipcio">$1740,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="fer-3">
+                    <img src="../img/FERNETBRANCA1000ml.jpg" class="productos-img card-img-top" alt="Imagen de FERNET BRANCA 1000ml">
+                    <div class="card-body">
+                        <h5 class="card-title">FERNET BRANCA 1000ml</h5>
+                        <p class="card-text azul-egipcio">$2330,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                
+                <div class="card p-3" id="sant-4">
+                    <img src="../img/FERNETBRANCAMENTA750ml.jpg" class="productos-img card-img-top" alt="Imagen de FERNET BRANCA MENTA 750ml">
+                    <div class="card-body">
+                        <h5 class="card-title">FERNET BRANCA MENTA 750ml</h5>
+                        <p class="card-text azul-egipcio">$1830,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <li>Destilados</li>
+            <div class="grid-productos">
+                <div class="card p-3" id="dest-1">
+                    <img src="../img/GINGORDONS750ml.jpg" class="productos-img card-img-top" alt="Imagen de GIN GORDONS 750ml">
+                    <div class="card-body">
+                        <h5 class="card-title">GIN GORDONS 750ml</h5>
+                        <p class="card-text azul-egipcio">$1920,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="dest-2">
+                    <img src="../img/HERACLITOLONDONDRYGIN750ml.jpg" class="productos-img card-img-top" alt="Imagen de HERACLITO LONDON DRY GIN 750ml">
+                    <div class="card-body">
+                        <h5 class="card-title">HERACLITO LONDON DRY GIN 750ml</h5>
+                        <p class="card-text azul-egipcio">$2500,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="dest-3">
+                    <img src="../img/JOHNNIEWALKERREDLABEL750ml.jpg" class="productos-img card-img-top" alt="Imagen de JOHNNIE WALKER RED LABEL 750ml">
+                    <div class="card-body">
+                        <h5 class="card-title">JOHNNIE WALKER RED LABEL 750ml</h5>
+                        <p class="card-text azul-egipcio">$3930,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                
+                <div class="card p-3" id="dest-4">
+                    <img src="../img/JOHNNIEWALKERBLACKLABEL750ml.jpg" class="productos-img card-img-top" alt="Imagen de JOHNNIE WALKER BLACK LABEL 750ml">
+                    <div class="card-body">
+                        <h5 class="card-title">JOHNNIE WALKER BLACK LABEL 750ml</h5>
+                        <p class="card-text azul-egipcio">$6740,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <li>Promociones</li>
+            <div class="grid-productos">
+                <div class="card p-3" id="producto-1">
+                    <img src="../img/fc.jpg" class="productos-img card-img-top" alt="Imagen de la promocion de Fernet de 750ml más Coca Cola de 2,5L">
+                    <div class="card-body">
+                        <h5 class="card-title">Fernet con Coca</h5>
+                        <p class="card-text azul-egipcio">$1750</p>
+                        <a href="./html/tienda_online.html" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="producto-2">
+                    <img src="../img/sprite gancia 2.jpg" class="productos-img card-img-top" alt="Imagen de la promocion de Gancia de 750ml más Sprite de 2,5L">
+                    <div class="card-body">
+                        <h5 class="card-title">Gancia con Sprite</h5>
+                        <p class="card-text azul-egipcio">$1200</p>
+                        <a href="./html/tienda_online.html" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="producto-3">
+                    <img src="../img/smir ras.jpg" class="productos-img card-img-top" alt="Imagen de la promocion de Smirnoff de 750ml más dos Speeds de 500ml">
+                    <div class="card-body">
+                        <h5 class="card-title">Smirnoff con 2 speeds XL</h5>
+                        <p class="card-text azul-egipcio">$1750</p>
+                        <a href="./html/tienda_online.html" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="producto-4">
+                    <img src="../img/frizze.jpg" class="productos-img card-img-top" alt="Imagen de la promocion de 2 Frizze de 750ml">
+                    <div class="card-body">
+                        <h5 class="card-title">2 Frizze</h5>
+                        <p class="card-text azul-egipcio">$800</p>
+                        <a href="./html/tienda_online.html" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <li>Sin alcohol</li>
+            <div class="grid-productos">
+                    <div class="card p-3" id="sin-1">
+                    <img src="../img/SPEEDXL500ml.jpg" class="productos-img card-img-top" alt="Imagen de SPEED XL 500ml">
+                    <div class="card-body">
+                        <h5 class="card-title">SPEED XL 500ml</h5>
+                        <p class="card-text azul-egipcio">$330,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="sin-2">
+                    <img src="../img/FANTA1500ml.jpg" class="productos-img card-img-top" alt="Imagen de FANTA 1500ml">
+                    <div class="card-body">
+                        <h5 class="card-title">FANTA 1500ml</h5>
+                        <p class="card-text azul-egipcio">$3900,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="sin-3">
+                    <img src="../img/COCACOLA1750ml.jpg" class="productos-img card-img-top" alt="COCA COLA 1750ml">
+                    <div class="card-body">
+                        <h5 class="card-title">COCA COLA 1750ml</h5>
+                        <p class="card-text azul-egipcio">$390,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+                <div class="card p-3" id="dest-4">
+                    <img src="../img/REDBULL355ML.jpg" class="productos-img card-img-top" alt="Imagen de RED BULL 355ML">
+                    <div class="card-body">
+                        <h5 class="card-title">RED BULL 355ML</h5>
+                        <p class="card-text azul-egipcio">$600,00</p>
+                        <a href="#" class="boton-productos btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
     <footer>
         <p class="p-2 subtitulo-footer">Envíos a domicilio via whatsapp o instagram.</p>
         <section class="final">

@@ -13,46 +13,47 @@
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="anuncio-header">
+        <p>Envío Gratis desde $5999 <a href="./html/envios.html">A TODO EL PAIS</a> + 3 cuotas sin interes. </p>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img class="logo" src="./img/logo.png" alt="Imagen del logo de Rey de copas"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="./img/logo.png" alt="Imagen del logo de Rey de copas"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="navitem active color-azul" aria-current="page" href="index.html" > Inicio </a>
-            </li>
-            <li class="nav-item">
-                <a class="navitem text-center color-violeta" href="./html/tienda_online.html">Tienda Online</a>
-            </li>
-            <li class="nav-item">
-                <a class="navitem color-negro" href="./html/promociones.html">Promociones</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="dropdown-toggle navitem color-verde" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sucursales
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item azul-egipcio" href="./html/sucursales.html">Alta Córdoba</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item azul-egipcio" href="#">Cofico</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item azul-egipcio" href="#">Nueva Córdoba</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="navitem color-rojo" href="./html/contacto.html">Contacto</a>
-            </li>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="navitem nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="navitem nav-link" href="./html/tienda_online.html">Tienda Online</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link navitem" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sucursales</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item azul-egipcio" href="./html/sucursales.html">Alta Córdoba</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item azul-egipcio color-gris">Cofico (Próximamente)</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item azul-egipcio color-gris">Nueva Córdoba (Próximamente)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="navitem nav-link" href="./html/envios.html">Envios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navitem nav-link" href="./html/contacto.html">Contacto</a>
+                </li>
             </ul>
             <form class="d-flex buscador">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn-nav btn btn-outline-success" type="submit">Buscar</button>
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn-nav btn btn-outline-success" type="submit">Buscar</button>
             </form>
-        </div>    
-    </nav>
+            </div>
         </div>
+    </nav>
         <div class="subtitulo">
             <h1>
                 ¿Quienes somos?
@@ -88,13 +89,13 @@
             </div>
     </header>
     <main>
-    <h2 class="pt-3">Productos destacados</h2>
+    <h2 class="pt-3 titulo-main">Productos destacados</h2>
     <div class="grid-productos">
         <div class="card p-3" id="producto-1">
             <img src="./img/fc.jpg" class="productos-img card-img-top" alt="Imagen de la promocion de Fernet de 750ml más Coca Cola de 2,5L">
             <div class="card-body">
                 <h5 class="card-title">Fernet con Coca</h5>
-                <p class="card-text azul-egipcio">$XXXX</p>
+                <p class="card-text azul-egipcio">$1750</p>
                 <a href="./html/tienda_online.html" class="boton-productos btn btn-primary">Comprar</a>
             </div>
         </div>
@@ -102,7 +103,7 @@
             <img src="./img/sprite gancia 2.jpg" class="productos-img card-img-top" alt="Imagen de la promocion de Gancia de 750ml más Sprite de 2,5L">
             <div class="card-body">
                 <h5 class="card-title">Gancia con Sprite</h5>
-                <p class="card-text azul-egipcio">$XXXX</p>
+                <p class="card-text azul-egipcio">$1200</p>
                 <a href="./html/tienda_online.html" class="boton-productos btn btn-primary">Comprar</a>
             </div>
         </div>
@@ -110,7 +111,7 @@
             <img src="./img/smir ras.jpg" class="productos-img card-img-top" alt="Imagen de la promocion de Smirnoff de 750ml más dos Speeds de 500ml">
             <div class="card-body">
                 <h5 class="card-title">Smirnoff con 2 speeds XL</h5>
-                <p class="card-text azul-egipcio">$XXXX</p>
+                <p class="card-text azul-egipcio">$1750</p>
                 <a href="./html/tienda_online.html" class="boton-productos btn btn-primary">Comprar</a>
             </div>
         </div>
@@ -118,7 +119,7 @@
             <img src="./img/frizze.jpg" class="productos-img card-img-top" alt="Imagen de la promocion de 2 Frizze de 750ml">
             <div class="card-body">
                 <h5 class="card-title">2 Frizze</h5>
-                <p class="card-text azul-egipcio">$XXXX</p>
+                <p class="card-text azul-egipcio">$800</p>
                 <a href="./html/tienda_online.html" class="boton-productos btn btn-primary">Comprar</a>
             </div>
         </div>
@@ -133,9 +134,9 @@
         <p class="p-2 subtitulo-footer">Envíos a domicilio via whatsapp o instagram.</p>
         <section class="final">
         <div id="newsletter">
-            <p class="px-4 texto-gris fw-bold"> NEWSLETTER</p>
-            <p class="px-4 texto-gris">No te pierdas nuestras promos y novedades!</p>
-            <form class="px-4 texto-gris">
+            <p class="px-4 color-gris fw-bold"> NEWSLETTER</p>
+            <p class="px-4 color-gris">No te pierdas nuestras promos y novedades!</p>
+            <form class="px-4 color-gris">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label fw-bold">Nombre</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -151,25 +152,25 @@
         <div class="footer-flex">
         <div class="item-footer" id="Mas-info">
             <ul>
-                <p class="texto-gris fw-bold">MÁS INFORMACION</p>
+                <p class="color-gris fw-bold">MÁS INFORMACION</p>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="./index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="tienda_online.html">Tienda Online</a>
+                    <a href="./html/tienda_online.html">Tienda Online</a>
                 </li>
                 <li>
-                    <a href="promociones.html">Promociones</a>
+                    <a href="./html/sucursales.html">Sucursales</a>
                 </li>
                 <li>
-                    <a href="sucursales.html">Sucursales</a>
+                    <a href="./html/envios.html">Envios</a>
                 </li>
                 <li>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="./html/contacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
-        <div class="item-footer texto-gris" id="contacto">
+        <div class="item-footer color-gris" id="contacto">
             <ul>
                 <p class="fw-bold">DATOS DE CONTACTO</p>
                 <li>

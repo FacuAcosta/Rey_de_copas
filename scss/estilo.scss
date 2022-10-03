@@ -2,20 +2,6 @@
 @import "fonts";
 @import "color";
 @import "misc";
-/* Maps */
-$menu: (
-    azul: $azul-egipcio,
-    violeta: violet,
-    negro: black,
-    verde: green,
-    rojo: red,
-);
-
-@each $item, $color in $menu{
-    .color-#{$item} {
-        color: $color;
-    }
-}
 /* Mixin */
 @mixin size($alto, $ancho) {
     width: $ancho;
@@ -24,7 +10,7 @@ $menu: (
 /* Map-Get */
 $estilos: (
     centro: center,
-    tFuente: 1.4rem,
+    tFuente: 1.7rem,
     borRad: 10px,
 );
 *{
@@ -33,19 +19,37 @@ $estilos: (
     box-sizing: border-box;
     font-family: $font-family;
 }
+.anuncio-header {
+    background-color: $azul-egipcio;
+    text-align: center;
+    p {
+        color: $plateado;
+        text-align: map-get($map: $estilos, $key: centro );
+        font-size: 1.3rem;
+        a {
+            text-decoration: $dN;
+            color: $plateado;
+        }
+    }
+}
+
 .navitem {
     text-decoration: $dN;
     font-size: map-get($map: $estilos, $key: tFuente );
     margin: 20px;
-    /* color: $black; */
+    color: $black;
+    background-color: white;
 }
 .azul-egipcio {
     color: $azul-egipcio;
     font-weight: 600;
 }
+.color-gris {
+    color: $plateado;
+}
 .logo {
     /* width: 100px; */
-    @include size(100%, 100px);
+    @include size(100%, 80px);
 }
 .btn-nav {
     color: $plateado;
@@ -55,7 +59,14 @@ $estilos: (
     background-color: $azul-egipcio;
     color: $plateado;
     text-align: map-get($map: $estilos, $key: centro );
-
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: $plateado;
+    background-color: $azul-egipcio;
+    background-size: 100%, 100%;
+    border: 1px solid black;
 }
 h1, h2 {
     text-align: map-get($map: $estilos, $key: centro );
@@ -193,4 +204,64 @@ footer {
     justify-content: space-around;
     }
 }
+}
+/* Tienda Online */
+.lista-productos {
+    list-style: none;
+    
+}
+.item-productos {
+    font-size: 1.7rem;
+}
+
+
+/* Envios */
+.card-header {
+    font-size: 1.8rem;
+}
+/* Sucursales */
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left: 0px;
+    top: 10px;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* Contacto */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: $azul-egipcio;
+    color: $plateado;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.1);
+}
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
 }
